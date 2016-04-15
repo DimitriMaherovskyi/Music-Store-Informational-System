@@ -16,6 +16,8 @@ namespace MusicShop.Repositories
 
         public CheckRepository(string connectionString)
         {
+            // IP: ініціалізацію _connectionString можна було б перенести "на плечі" базового класу репо - SqlBaseRepository
+            // класи та їх відповідні інтерфейси бажано було б розподілити в межах своїх логічних підпапок
             _connectionString = connectionString;
         }
 
