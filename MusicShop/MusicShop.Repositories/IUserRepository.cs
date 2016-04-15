@@ -10,6 +10,8 @@ namespace MusicShop.Repositories
     /// <summary>
     /// Operations with user
     /// </summary>
+    
+    // IP: інтерфейси бажано робити як "public"
     interface IUserRepository
     {
         User GetUserByLogin(string login, string password);
